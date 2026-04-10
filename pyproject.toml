@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "llmsyc"
+version = "0.1.0"
+description = "LLM-Sycophancy Reducer: Shared Custom Prompt Library"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.0",
+    "pydantic>=2.0",
+]
+
+[project.scripts]
+llmsyc = "llmsyc.cli:cli"
